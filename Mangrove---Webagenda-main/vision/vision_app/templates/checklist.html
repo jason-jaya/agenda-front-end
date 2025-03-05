@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/static/site.css" />
+    <link rel="stylesheet" type="text/css" href="../static/site.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/inputs.css">
     <link rel="stylesheet" href="../static/buttons.css">
@@ -32,7 +32,7 @@
     <title>Checklist</title>
 </head>
 <body>
-    <script src='/static/navchanger.js'></script>
+    <script src='../static/navchanger.js'></script>
     <div class="navbar">
         <div class="topnav-right">
             <a href="home.html" class="navbar-brand">Home</a>
@@ -40,11 +40,13 @@
         <span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776;</span> 
         <div id="mySidepanel" class="sidepanel">
             <a href="about.html" class="navbar-item">About</a>
+            <a href="home.html" class="navbar-item">Home</a>
             <a href="focus.html" class="navbar-item">Focus</a>
             <a href="calendar.html" class="navbar-item">Calendar</a>
             <a href="checklist.html" class="navbar-item">Checklist</a>
             <a href="settings.html" class="navbar-item">Settings</a>
-            <a href="logout.html" class="navbar-item">Logout</a>
+            <a href="login.html" class="navbar-item">Login</a>
+            <a href="register.html"class="navbar-item">Register</a>
         </div>
     </div>
     <br>
@@ -71,7 +73,7 @@
             <script src='/static/script3.js'></script>
             <input type="submit" value="Add Task">
         </form>
-        <script src='/static/script2.js'></script>
+        <script src='../static/script2.js'></script>
         <br>
         <div id="task-list">
             <p>Task</p><p>Description</p><p>Due Date</p><p></p>

@@ -15,7 +15,7 @@
   }
   
   .navbar-brand {
-    content: url('https://cdn.discordapp.com/attachments/547910378735271937/1081646931723419668/IMG_0310.png');
+    content: url('../static/IMG_0310.png');
     height: 50px;
     width: 50px;
     margin-left: 30px;
