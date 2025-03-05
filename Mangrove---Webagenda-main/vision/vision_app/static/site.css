@@ -71,7 +71,7 @@
   
 
 body{ 
-    background-image: url(Mangrove---Webagenda-main\vision\vision_app\static\mangrovebackground2.jpg);
+    background: url("../static/mangrovebackground2.jpg");
     background-size:contain;
     background-color: white;
     color: #444;
