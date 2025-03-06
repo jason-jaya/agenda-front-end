@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/site.css">
+    <link rel="stylesheet" href="../static/css/inputs.css">
+    <link rel="stylesheet" href="../static/css/dropdown.css">
+    <link rel="stylesheet" href="../static/css/login2.css">
+    <link rel="stylesheet" href="../static/css/navbar2.css">
+    <script src="../static/js/burgermenu.js"></script>
+    <script src="../static/js/position.js"></script>    
+    <title>About</title>
+    <style>
+        p {text-align: center}
+        p {font-size: 28px}
+    </style>
+</head>
+<body>
+    <script src='../static/js/navchanger.js'></script>
+    <div class="navbar">
+        <div class="topnav-right">
+            <a href="home.html" class="navbar-brand">Home</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776;</span> 
+        <div id="mySidepanel" class="sidepanel">
+            <a href="about.html" class="navbar-item">About</a>
+            <a href="home.html" class="navbar-item">Home</a>
+            <a href="focus.html" class="navbar-item">Focus</a>
+            <a href="calendar.html" class="navbar-item">Calendar</a>
+            <a href="checklist.html" class="navbar-item">Checklist</a>
+            <a href="settings.html" class="navbar-item">Settings</a>
+            <a href="login.html" class="navbar-item">Login</a>
+            <a href="register.html"class="navbar-item">Register</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="buttons">
+            <span class="btn active" onclick="document.getElementById('text').style.fontSize = '1em'">A</span>
+            <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.25em'">A</span>
+            <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.5em'">A</span>
+        </div>
+        <div class="content" id="text">
+            <h2>Mangrove makes it easy to stay organized and focused, so you can achieve more than you ever thought possible. 
+                Much like how gardeners carefully manage the growth and structure of plants by pruning and maintaining their roots, 
+                Mangrove can keep your tasks organized, easily accessible, and under control, even when they become complex and overwhelming.
+                Use Mangrove today.</h2>
+        </div>
+    </div>
+    <div></div>
+    <script>
+        let buttons = document.querySelector('.buttons');
+        let btn = buttons.querySelectorAll('.btn');
+        for (var i = 0; i < btn.length; i++){
+            btn[i].addEventListener('click', function(){
+                let current = document.getElementsByClassName('active');
+                current[0].className = current[0].className.replace("active", "");
+                this.className += " active";
+            })
+        }
+    </script>
+</body>
+</html>
+
+
